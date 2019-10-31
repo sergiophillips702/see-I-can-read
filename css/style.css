@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/*
+I Can Read
+Cascading Stlye Sheet
+Author: Sergio P. Arambul
+Date: October 29, 2019
+   Filename: style.css
+*/
+html {
+  background-color:#555;
+  background-image:url('images/kid_coloum.png');
+}
+body {
+  margin-left:200px;
+  margin-right:200px;
+  background-color:white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+img{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item
+{
+  background-image:url('images/owl.png');
+  background-color: #555;
+  margin-left:310px;
+  margin-right:310px;
+  border: 5px outset green;
+  padding:100px;
+}
+.carousel-inner{
+background-color: white;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.embed-responsive{
+  background-color: #555;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  margin-left:510px;
+  margin-right:510px;
+
+
+}
+.embed-responsive-item{
+
+
+}
+/* Style the navigation bar */
+.navbar {
+border: 5px outset green;
+background-color: #555;
+overflow: auto;
+background:red;
+margin-bottom: 110px;
+justify-content: center;
+
+}
+
+/* Navbar links */
+.navbar a {
+border: 5px outset green;
+ float:right;
+ text-align: center;
+ padding:15px;
+ color: black;
+ text-decoration: none;
+ font-size: 25px;
+font-family:grunge, Helvetica, sans-serif;
+background:yellow;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+ background-color: red;
+}
+nav a {
+
+font-family:grunge, Helvetica, sans-serif;
+
+color:white;
+}
+
+nav a:link, nav:visited{
+color:white;
+text-decoration:none;
+background-color: #8B0000;
+
+}
+
+nav a:hover,nav a:active{
+color:  #555;
+backround-color:white;
+}
+
+/* Current/active navbar link */
+.active {
+ background-color: #8B0000;
+}
+footer {
+text-align: center;
+
+background: red;
+border: 5px outset green;
+color: black;
+font-size: 1.5em;
+font-family: Helvetica, sans-serif;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-top: 100px;
+}
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
