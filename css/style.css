@@ -8,10 +8,11 @@ Date: October 29, 2019
    Filename: style.css
 */
 html {
-  background-color:#555;
+  background-color:#248;
   background-image:url('images/kid_coloum.png');
 }
 body {
+    background-image:url('images/abc.png');
   margin-left:200px;
   margin-right:200px;
   background-color:white;
@@ -24,88 +25,166 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
-.item
-{
-  background-image:url('images/owl.png');
-  background-color: #555;
-  margin-left:310px;
-  margin-right:310px;
-  border: 5px outset green;
-  padding:100px;
+.btn {
+background-color:#1019;
+ border: none; /* Remove borders */
+ color: white; /* White text */
+ padding: 10px 20px 10px 20px; /* Some padding */
+ font-size: 50px; /* Set a font size */
+ cursor: pointer; /* Mouse pointer on hover */
+ position: relative;
+ left: 550px;
 }
-.carousel-inner{
+
+/* Darker background on mouse-over */
+.btn:hover {
+
+}
+
+
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+footer {
+
+text-align: center;
+	background-color: #555;
+	color: white;
+	font-size: 1.5em;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+.carousel-inner {
 background-color: white;
-padding-top: 100px;
-padding-bottom: 100px;
 }
-.embed-responsive{
-  background-color: #555;
-  padding-top: 300px;
-  padding-bottom: 300px;
-  margin-left:510px;
-  margin-right:510px;
 
-
-}
-.embed-responsive-item{
-
-
-}
-/* Style the navigation bar */
-.navbar {
+.item {
+  /*background-image:url('images/owl.png');*/
+background-color: white;
+margin-left:310px;
+margin-right:310px;
 border: 5px outset green;
-background-color: #555;
-overflow: auto;
-background:red;
-margin-bottom: 110px;
-justify-content: center;
+}
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+ width:100%; /* Full width */
+ padding: 20px; /* Some padding */
+ font-size: 25px;
+ border: 1px solid #ccc; /* Gray border */
+ border-radius: 5px; /* Rounded borders */
+ box-sizing: border-box; /* Make sure that padding and width stays in place */
+ margin-top: 6px; /* Add a top margin */
+ margin-bottom: 16px; /* Bottom margin */
+ resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+ background-color: red;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: 25px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+ background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+   margin-top: 25px; /* Add a top margin */
+ border-radius: 5px;
+ background-color:green;
+ padding: 10px;
+ font-size: 25px;
+ color: yellow;
+
+}
+div {
+background-color:green;
+color:white;
+  border: 1px solid gray;
+  margin-left:210px;
+  margin-right:210px;
+  padding: 8px;
+}
+
+h2 {
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+   font-size: 50px;
+   font-family:Helvetica, sans-serif;
+}
+
+
+p {
+
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  padding: 25px;
+   font-size: 25px;
+   font-family:Helvetica,sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+.nav-item {
+border: 5px outset green;
+
+background:none ;
+margin-bottom: 0px;
 }
 
 /* Navbar links */
-.navbar a {
+.nav-item a {
 border: 5px outset green;
- float:right;
- text-align: center;
- padding:15px;
- color: black;
- text-decoration: none;
- font-size: 25px;
-font-family:grunge, Helvetica, sans-serif;
+text-align: center;
+padding:15px;
+color: black;
+text-decoration: none;
+font-size: 25px;
+font-family:Helvetica, sans-serif;
 background:yellow;
+
 }
 
 /* Navbar links on mouse-over */
-.navbar a:hover {
- background-color: red;
-}
-nav a {
-
-font-family:grunge, Helvetica, sans-serif;
-
-color:white;
-}
-
-nav a:link, nav:visited{
-color:white;
-text-decoration:none;
-background-color: #8B0000;
-
-}
-
-nav a:hover,nav a:active{
-color:  #555;
-backround-color:white;
-}
-
-/* Current/active navbar link */
-.active {
- background-color: #8B0000;
+.nav-item a:hover {
+ color: red;
 }
 footer {
 text-align: center;
 
-background: red;
+background: yellow;
 border: 5px outset green;
 color: black;
 font-size: 1.5em;
@@ -114,6 +193,14 @@ padding-top: 20px;
 padding-bottom: 20px;
 margin-top: 100px;
 }
+.twitter-timeline {
+margin-left:10px;
+margin-right:410px;
+padding:15px;
+position: relative;
+left: 82px;
+}
+
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
   .navbar a {
