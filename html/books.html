@@ -1,19 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<!--
-I Can Read
-Home Page
-Author: Sergio P. Arambul
-Date: September 6, 2019
-filename:index.html
--->
-<meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Home</title>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<!-- Latest compiled and minified CSS -->
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  type="text/css" href="stylie.css"/>
+<link rel="stylesheet"  type="text/css" href="style.css"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,26 +15,32 @@ filename:index.html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
 </head>
 <header>
 <img src="images/see.png" style="width:100%"; alt="See I can read">
+ <header/>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
 <ul class="nav nav-pills nav-justified">
 
  <li class="nav-item">
    <a class="nav-link" href="index.html">Home</a>
  </li>
  <li class="nav-item">
-   <a class="nav-link active" href="about.html">About</a>
+   <a class="nav-link" href="about.html">About</a>
+
  </li>
  <li class="nav-item">
    <a class="nav-link" href="contact.html">Contact</a>
  </li>
  <li class="nav-item">
-   <a class="nav-link" href="orders.html">Orders</a>
+<a class="nav-link" href="orders.html">Orders</a>
  </li>
  <li class="nav-item">
-   <a class="nav-link" href="books.html">Books</a>
+
+   <a class="nav-link active" href="books.html">Books</a>
  </li>
  <li class="nav-item">
    <a class="nav-link" href="links.html">Links</a>
@@ -55,21 +51,51 @@ filename:index.html
 </ul
  </a>
 </nav>
- <header/>
 <body>
-<div class="about" id="colour">
-  <h2>History and Credits</h2>
-  <p><img src="images/cris.png" alt="Smiley face" style="float:left;width:250px;height:250px;">SEE I Can Read™ children's books are designed to teach 3 to 6 year olds to read by themselves. The concept was conceived as Cris Lindsey, President of Millennium 2000 Publishing Company, was working with his daughter Sarah. He wanted her to be able to read her own mail when he wrote to her. He created the books to give his daughter as well as other children a sense of independence. The books were created using picture illustrations to form the sentences, with the actual words written under the pictures so that the child can recognize the pictures and associate it with the word beneath it.<a target="_blank" href="https://rambulltech.com">"look at the awesome web designs"</a>.</p>
-<article>
-  <video width="1000" height="240" autoplay>
-  <source src="video/seeicanread.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<!-- MAIN (Center website) -->
+<div class="main">
 
-  <h2>Case Studies</h2>
-    <p>This method has proven itself very effective with young children. Once they realize that they can read, by following the picture illustration, they become so excited and their desire to read, becomes even greater. Now the child can read like big brother or big sister, like mommy and daddy, which makes that little child feel important and not excluded. Now the child can pick up his or her book, and proceed to read to mommy, daddy, big brother, or big sister. The child feels good about himself, and confident. This confidence generally carries on to other task they soon encounter in their everyday adventures in life. It gives the children the desire to excel in all they attempt to do in their struggle to seek out their independence.</p>
-</article>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/book1.png" alt="Vol.1" style="width:100%">
+      <h3>Vol.1</h3>
+      <p>SEE I Can Read™ children's books are designed to teach 3 to 6 year olds to read by themselves.</p>
+    </div>
   </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/book2.png" alt="Vol.2" style="width:100%">
+      <h3>Vol.2</h3>
+      <p>SEE I Can Read™ children's books are designed to teach 3 to 6 year olds to read by themselves.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/book3.png" alt="Vol.3" style="width:100%">
+      <h3>Vol.3</h3>
+    <p>SEE I Can Read™ children's books are designed to teach 3 to 6 year olds to read by themselves.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/book1.png" alt="Vol.4" style="width:100%">
+      <h3>Vol.4</h3>
+      <p>SEE I Can Read™ children's books are designed to teach 3 to 6 year olds to read by themselves.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="images/cris.png" alt="Cris Lindsey" style="width:100%">
+  <h3>See I Can Read</h3>
+    <p>SEE I Can Read™ children's books are designed to teach 3 to 6 year olds to read by themselves. The concept was conceived as Cris Lindsey, President of Millennium 2000 Publishing Company, was working with his daughter Sarah..<a target="_blank" href="https://rambulltech.com">"look at the awesome web designs"</a>.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
 <a href="https://facebook.com"><button class="btn"><i class="fab fa-facebook"></i></button>
 <a href="https://linkedin.com"><button class="btn"><i class="fab fa-linkedin"></i></button>
 <a href="https://youtube.com"><button class="btn"><i class="fab fa-youtube"></i></button>
@@ -79,4 +105,5 @@ filename:index.html
         &#10087; Virginia Beach, Virginia 23451   &#10087; 757.555.5555
 </footer>
 </body>
+
 </html>
